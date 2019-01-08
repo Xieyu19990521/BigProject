@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserAddressActivity">
+
+    <TextView
+        android:id="@+id/add_title"
+        android:text="我的收货地址"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#666"
+        />
+    <TextView
+        android:id="@+id/add_completed"
+        android:text="完成"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/add_title"
+        android:layout_alignBottom="@id/add_title"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/dp_24"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/add_recycler"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_completed"
+        android:layout_marginBottom="@dimen/dp_60"
+        />
+    <Button
+        android:id="@+id/add_add"
+        android:layout_width="@dimen/dp_116"
+        android:layout_height="@dimen/dp_30"
+        android:text="新增收货地址"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp_12"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/address_but_bg"
+        android:layout_marginBottom="@dimen/dp_30"
+        />
+
+</RelativeLayout>

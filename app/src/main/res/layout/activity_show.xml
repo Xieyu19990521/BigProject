@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ShowActivity">
+
+    <com.example.yu.bigproject.views.CustomViewPager
+        android:id="@+id/show_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RadioGroup
+        android:id="@+id/show_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_81"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@mipmap/bg_homepage_bottom"
+        >
+        <RadioButton
+            android:id="@+id/show_home"
+            android:layout_width="@dimen/dp_26"
+            android:layout_height="@dimen/dp_26"
+            android:button="@null"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:layout_marginRight="@dimen/dp_29"
+            android:background="@drawable/show_tab_bottom_home"
+            />
+
+        <RadioButton
+            android:id="@+id/show_circle"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_26"
+            android:button="@null"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_32"
+            android:background="@drawable/show_tab_bottom_circle"
+            />
+        <RadioButton
+            android:id="@+id/show_shopping_cart"
+            android:layout_width="@dimen/dp_65"
+            android:layout_height="@dimen/dp_65"
+            android:button="@null"
+            android:layout_gravity="bottom"
+            android:background="@mipmap/home_btn_shopping_cart_n"
+             />
+
+        <RadioButton
+            android:id="@+id/show_list"
+            android:layout_width="@dimen/dp_26"
+            android:button="@null"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:background="@drawable/show_tab_bottom_list"
+            android:layout_height="@dimen/dp_26" />
+
+        <RadioButton
+            android:id="@+id/show_my"
+            android:layout_width="@dimen/dp_26"
+            android:layout_height="@dimen/dp_26"
+            android:button="@null"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:layout_marginRight="@dimen/dp_32"
+            android:background="@drawable/show_tab_bottom_my"/>
+    </RadioGroup>
+</RelativeLayout>
